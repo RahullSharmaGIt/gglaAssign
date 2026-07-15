@@ -1,6 +1,7 @@
 const express = require("express");
 const { createSong, allSongs } = require("../controller/songs.controller");
 const multer = require("multer");
+const { requireAuth, requireRole } = require("../middleware/auth.middleware");
 const router = express.Router()
 
 const storage = multer({
@@ -11,7 +12,7 @@ const storage = multer({
     }
 })
 
-router.post("/song",storage.array("audioFile"), createSong);
-router.get("/songs", allSongs);
+router.post("/song", requireAuth, requireRole("admin"), storage.array("audioFile"), createSong);
+router.get("/songs", requireAuth, allSongs);
 
 module.exports = router

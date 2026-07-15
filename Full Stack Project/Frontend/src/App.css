@@ -1,1 +1,70 @@
 @import "tailwindcss";
+.page-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0 24px;
+  font-weight: 600;
+}
+
+.page-topbar button,
+.simple-button,
+.auth-form button,
+.link-button {
+  border: 1px solid #111827;
+  background: #fff;
+  color: #111827;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.simple-button {
+  margin-top: 8px;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 24px;
+  background: #fff;
+}
+
+.auth-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.auth-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.auth-form input,
+.auth-form select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.auth-message {
+  margin-top: 12px;
+  color: #b91c1c;
+}
+
+.link-button {
+  margin-top: 12px;
+  width: 100%;
+}

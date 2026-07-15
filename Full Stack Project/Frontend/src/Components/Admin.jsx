@@ -1,11 +1,12 @@
 import { useState, useRef } from "react";
+import { getToken } from "../utils/auth";
 
 const MOODS = ["neutral","happy","sad","angry"];
 
 // Change this if your backend runs elsewhere
 const ENDPOINT = "http://localhost:8000/app/song";
 
-export default function Admin() {
+export default function Admin({ onLogout }) {
   const [title, setTitle] = useState("");
   const [artist, setArtist] = useState("");
   const [mood, setMood] = useState("");
@@ -41,7 +42,13 @@ export default function Admin() {
       setLoading(true);
       // NOTE: koi 'Content-Type' header mat set karo — browser khud
       // multipart boundary laga dega. Manually set kiya to backend break hoga.
-      const res = await fetch(ENDPOINT, { method: "POST", body: fd });
+      const res = await fetch(ENDPOINT, {
+        method: "POST",
+        body: fd,
+        headers: {
+          Authorization: `Bearer ${getToken()}`
+        }
+      });
 
       if (!res.ok) {
         const text = await res.text().catch(() => "");
@@ -131,6 +138,11 @@ export default function Admin() {
         .sf-msg.ok  { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
         .sf-msg.err { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
       `}</style>
+
+      <div className="page-topbar">
+        <div>Admin Panel</div>
+        <button type="button" onClick={onLogout}>Logout</button>
+      </div>
 
       <div className="sf-card">
         <span className="sf-eyebrow"><span className="sf-dot" /> Upload</span>
