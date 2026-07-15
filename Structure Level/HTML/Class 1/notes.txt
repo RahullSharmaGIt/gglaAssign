@@ -1,0 +1,12 @@
+HTML : Hypertext markup language , where we use some tags to create the skeleton of our webpage.
+
+How to create the HTML file?
+.html extentions use karke.
+
+What are the use cases of meta tag?
+--> For Responsive website.
+--> For encoding(UTF-8) the character level things to the webpage.
+--> For SEO
+
+hr tag : Horizontal Line 
+br tag : break Line

@@ -1,0 +1,34 @@
+Color,
+    text-color
+    1rem=16px.
+
+Borders ,
+    Dimensions : width & height
+    borders : border-width,border-style,border-color
+    border-curveness : border-radius
+
+Box Model ,
+    padding : Space from inside the border
+    margin : Space from outside the border
+
+Backgrounds ,
+    background-color
+    background-image
+        size
+        repeat
+        position
+
+FlexBox , 
+    Here you work on One-Dimensional : either row or column
+
+    display : flex 
+        gap
+        justify-content
+        flex-direction
+        flex-wrap
+        
+
+Animation ,
+    Animation starts when page gets reload.
+    Here we will make some frames.
+    0% to 100%

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        /* display: flex;
+        justify-content: center; */
+
+
+        display: grid;
+        /* grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px; */
+
+        /* grid-template-columns: auto; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        grid-template-rows: 300px 300px 300px 300px; */
+
+        grid-template-columns: repeat(3,300px);
+        grid-template-rows: repeat(4,300px);
+
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+    .c-1{
+        width: 250px;
+        height: 250px;
+        background-color: red;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .c-1:hover{
+        background-color: green;
+        border-radius: 50px;
+    }
+
+    .c-2{
+        width: 250px;
+        height: 250px;
+        background-color: black;
+    }
+    .c-3{
+        width: 250px;
+        height: 250px;
+        background-color: green;
+    }
+    .c-4{
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+    }
+
+    /* @media (min-width:1920px) {
+        .container{
+            gap: 200px;
+        }
+    }
+
+    @media (min-width:1440px) and (max-width:1919px){
+        .container{
+            gap: 150px;
+        }
+    }
+
+    @media (min-width:1280px) and (max-width:1439px){
+        .container{
+            gap:70px;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:1279px){
+        .container{
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .c-1,.c-2,.c-3,.c-4{
+            width: 40%;
+        }
+    }
+
+    @media (min-width:440px) and (max-width:767px) {
+        .container{
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .c-1,.c-2,.c-3,.c-4{
+            width: 90%;
+        }
+    } */
+
+
+    /* .common:first-child{
+        border-radius: 50%;
+    }
+
+    .common:last-child{
+        transform: rotate(45deg);
+    }
+
+    .common:nth-child(9){
+        background-color: violet;
+    } */
+
+    .common:nth-child(even){
+        border-radius: 50%;
+    }
+
+    .common:nth-child(odd){
+        border: 10px solid beige;
+    }
+
+    .hero-blob{
+        position: relative;
+        left: 50px;
+        width: 280px;
+        height: 280px;
+
+        /* linear-gradient(direction,color1,color2,.......) */
+        background: linear-gradient(135deg,orange,indigo);
+        filter: blur(10px);
+        border-radius: 41% 58% 68% 37%;
+
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-card{
+        padding: 10px 20px;
+        position:absolute;
+        background-color: black;
+        color: white;
+        border-radius: 16px;
+
+        z-index: 2;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .card-1{top: 10px; left: 20px; animation-delay: 0s;}
+    .card-2{top: 130px; left: 280px; animation-delay:1.2s ;}
+    .card-3{top: 200px; left: 20px; animation-delay: 2.4s;}
+
+    @keyframes float{
+        0% , 100% {
+            transform: translateY(0);
+        }
+
+        50%{
+            transform: translateY(-16px);
+        }
+    }
+
+</style>
+<body>
+    <!-- <div class="container">
+        <div class="common c-1"></div>
+        <div class="common c-2"></div>
+        <div class="common c-3"></div>
+        <div class="common c-4"></div>
+        <div class="common c-1"></div>
+        <div class="common c-2"></div>
+        <div class="common c-3"></div>
+        <div class="common c-4"></div>
+        <div class="common c-1"></div>
+        <div class="common c-2"></div>
+        <div class="common c-3"></div>
+        <div class="common c-4"></div>
+        <div class="common c-1"></div>
+        <div class="common c-2"></div>
+        <div class="common c-3"></div>
+        <div class="common c-4"></div>
+    </div> -->
+
+    <div class="section">
+        <div class="floating-card card-1">Patagonia</div>
+        <div class="floating-card card-2">Bali</div>
+        <div class="floating-card card-3">Kyoto</div>
+        <div class="hero-blob"></div>
+    </div>
+</body>
+</html>

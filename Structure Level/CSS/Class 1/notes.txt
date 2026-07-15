@@ -1,0 +1,25 @@
+CSS
+What is CSS?
+Css is used for styling a web page, It stands for Cascading Style Sheet.
+
+These are of three types:
+i. Inline : Written within the HTML tag
+ii. Internal : Here we write css in our HTML file itself.
+iii. External : Here we create a new file of CSS and link with our HTML.
+
+How to write CSS?
+selector_name{
+    property-name:property-value,
+    property-name:property-value,
+    property-name:property-value,
+    property-name:property-value,
+    property-name:property-value,
+    property-name:property-value,
+}
+
+What is selectors?
+It means , how we can select HTML elements in styling.
+i. universal is denoted by * , it means whole body.
+ii. id is denoted by # , it is used only once , we cannot re-use id again & again.
+iii. class is denoted by . , it is used for common styling & can be re-use multiple times.
+iv. tagname called by their name itself

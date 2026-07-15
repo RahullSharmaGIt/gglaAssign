@@ -1,0 +1,8 @@
+What is MVC?
+Model View Controller
+It is used to split all code in the folders.
+
+In request we handle data in three formats
+1. req.body
+2. req.params
+3. req.query

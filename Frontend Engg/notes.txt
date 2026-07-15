@@ -1,0 +1,59 @@
+What is React?
+React is library of js, which helps us to create an optimised and scalable single page application.
+
+JS :
+    library : React (CSR : Client Side Rendering)
+    framework : Angular (CSR & SSR : Client & Server Side Rendering)
+
+React Installation
+    Step 1: Installation of Node JS.
+    Step 2: Open a folder in Vs Code.
+    Step 3: Run the command to create the React folder.
+        If faliure in step 3 : right click on windows --> open Terminal(Admin) --> Run command : Set-ExecutionPolicy RemoteSigned --> Restart your vscode --> All Fix.
+
+    Step 4: npm install : Install all the packages(node_modules)
+    Step 5: npm run dev : For go live
+
+JSX : Javascript Extensible , where we can write js & html together.
+
+Import : To use any components
+
+Export : To export your own component to use in any other file.
+    i. default : It can be only applied once in a file.
+    ii. named : Multiple export from a file.
+
+What is Component?
+It is a block of code that contains some feature and can be re-use when required.
+Components are of two types:
+    i. Class Component : Not more in use, because very lengthy process,not easy to understand.
+    ii. Functional Component : Very easy syntax.
+
+Component name must start with Capital Letters.
+
+How we can use JS in HTML?
+In Html we can JS variable using {var_name}.
+
+Pillars of React?
+i. State : Managing the value of a component.
+ii. Props : Transfeering dat from parent component to child component.
+iii. Hooks : A feature that helps us to create our application fast.
+
+WHat is conditional Rendering?
+Giving an output according to condition.Ternary Operator
+(condition) ? statement1 : statment2
+
+What is Wrapper Element?
+It is based on && operator.
+condition/variable && code/text
+
+Class 2 : Props , UseEffect , Form Handling
+What is props?
+Props is a technique where we transfer data from parent to child element.
+
+What is UseEffect?
+It is our react hook which helps us to handle the side effects of the UI.
+Api Response , Updates ,.....
+
+Form Handling are of two types:
+    i. Manual : Here , we have to write the logic to handle the form data. : Controlled Statement
+    ii. Package : Here we install a package to handle the form data : Uncontrolled Statement

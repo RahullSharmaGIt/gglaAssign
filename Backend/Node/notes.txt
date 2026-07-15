@@ -1,0 +1,18 @@
+What is Node JS?
+Node js is a runtime enviornment which helps uss to run the javascript outside our browser.
+
+Here we work on Event Loop / Event Driven Archeiture
+Event Loop means executing code according to their priorty.
+
+Call stack : console.log , if-else ,...synchronous code.
+Micro Task : Promises , then & catch , async & await
+Macro Task : Timers : setTimeout , setInterval
+Check : setImmediate...
+
+Staring up with node js
+Step 1: Initalizing project folder : npm init -y
+
+common js : require()
+es module : import
+
+Here I want to create a qr_image for a url

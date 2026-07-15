@@ -1,0 +1,15 @@
+MVC Archeiture
+    src
+        db
+        model
+        router
+        controller
+
+npm i express nodemon mongoose : packages that we install.
+
+package-name: dotenv : we use this package to secure our ports , secret key & all our credentials
+
+Database Connectvity
+Crud Operation from Database.
+
+Authentication : Bcryptjs

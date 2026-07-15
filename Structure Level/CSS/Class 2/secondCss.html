@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    h1 {
+        /* color: green; */
+        /* color: #ff0000; */
+        color: rgb(253, 127, 89);
+
+        font-size: 5rem;
+        font-style: italic;
+        font-weight: bolder;
+        font-family: "Black Ops One", system-ui;
+    }
+
+    .box{
+        width:90%;
+        height: 900px;
+        border: 20px solid blue;
+        /* border-radius: 30px; */
+
+        /* margin: 50px;
+        padding: 50px; */
+
+        /* padding/margin-left/right/top/bottom */
+
+        background-image: url(./html.png);
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+
+        /* background-size: contain; */
+        background-size: cover;
+    }
+
+    .container{
+        display: flex;
+        gap: 20px;
+
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        flex-direction: row-reverse;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+    }
+
+    .b-1{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+    .b-2{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+    .b-3{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+    }
+
+    .new{
+        width: 300px;
+        height: 300px;
+        background-color: red;
+
+        animation: rotateBox 4s ease-in-out 2s infinite ;
+    }
+
+    @keyframes rotateBox {
+        0%{
+            transform: rotate(0deg);
+        }
+
+        25%{
+            transform: rotate(90deg);
+            background-color: green;
+        }
+
+        50%{
+            transform: rotate(180deg);
+            background-color: black;
+        }
+
+        75%{
+            transform: rotate(270deg);
+            background-color: yellow;
+        }
+
+        100%{
+            transform: rotate(360deg);
+            background-color: blue;
+        }
+    }
+
+
+</style>
+
+<body>
+    <h1>
+        Hello Everyone
+    </h1>
+
+    <hr>
+
+    <div class="box">
+        <!-- This is the box -->
+    </div>
+
+    <div class="container">
+        <div class="b-1"></div>
+        <div class="b-2"></div>
+        <div class="b-3"></div>
+    </div>
+
+    <div class="new">
+
+    </div>
+</body>
+
+</html>

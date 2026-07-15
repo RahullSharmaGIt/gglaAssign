@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // Array : Array is a data structure that is used to stored values at continous memory location.It can store any type of value. It is based on zero based indexing , where it starts from 0 and goes till length-1.
+
+        let arr=[10,20,30,40,50,"Ayush",true,undefined,null]
+
+        // console.log(arr)
+        // for(let i=0;i<arr.length;i++){
+        //     console.log(arr[i])
+        // }
+
+        // push, pop, shift, unshift
+        // arr.push(1000); // add at the end.
+        // console.log(arr);
+        // arr.pop() // remove from the end
+        // console.log(arr);
+        // arr.shift() // remove from the start
+        // console.log(arr);
+        // arr.unshift(2000) // add at the start
+        // console.log(arr);
+
+        // splice(startIdx,deleteCount,elements...);
+        // console.log(arr)
+        // arr.splice(1,4,100.78,110.87) // add , remove  from anywhere of the array.
+        // console.log(arr)
+
+        // slice(start,end-1) , sort , concat , reverse , join
+        // console.log(arr.slice(0,4)) // slicing means cutting some part of array.
+        // console.log(arr.sort().reverse()) // method chaining
+
+        let newArr=[100,200,300,400,500]
+        let combineArr=arr.concat(newArr)
+
+        // console.log(combineArr)
+
+
+        // let nums=[12,3,4,10,7,90,78,23]
+        // // console.log(nums.sort()) // in js when we use sorting it converts each element into the string.
+        // console.log(nums.sort((a,b)=> a-b)); // Ascending 
+        // console.log(nums.sort((a,b)=> b-a)); // Descending 
+
+        // let info="Ayush-Noida-Codesquadz"
+        // // console.log(info.split("-"))
+        // let infoArr=info.split("-");
+        // console.log(infoArr)
+
+        // let text=infoArr.join("----");
+        // console.log(text)
+
+        // Array Adv Methods  :  map(callback) , filter(callback) , reduce(callback) , find(callback) , spread & rest
+
+        // What is callback?
+        // Callback is function inside another function waiting for execution.
+        
+        // combineArr.map((el)=>{
+        //     console.log(el+12)
+        // })
+
+        // let number=[12,40,34,5,33,11,29,45,18,20,37];
+        // // let filteredNumber=number.filter((el)=>el%2==0);
+        // let filteredNumber=number.filter((el)=>{return el%2==0});
+        // console.log(filteredNumber)
+
+        // reduce: it reduces the array into the single element.Here it has some accumlated value & it also returns the accumlated valuee.
+        // let sum=number.reduce((acc,el)=>{
+        //     acc=acc+el
+        //     return acc;
+        // },0)
+
+        // let findings=number.find((el)=> el>30) // it returns first occurence result
+        // console.log(findings)
+
+        // Both spread & rest are denoted by ...
+
+        // spread : it is used to copy an array , or add elemnts in the array.
+        // let copy=[...number,"Ayush","mehul"]
+
+        // rest : it is used for multiple arguments of function.
+
+        // function printNumber(...args){
+        //     console.log(args)
+        // }
+
+        // Objects : It is pair of key & value.
+        // let obj={
+        //     name:"Jitesh",
+        //     city: "Banglore",
+        //     age:31
+        // }
+
+        // console.log(obj)
+        // console.table(obj)
+
+        // How we can access the value of object
+
+        // Method 1: using .keyname method
+        // console.log(obj.name)
+
+        // Method 2: using ["keyname"] method
+        // console.log(obj["city"])
+
+        // How to delete the elements?
+        // delete obj.age
+
+        // console.log(obj)
+
+        // If I want to add any element in Object.
+        // obj["skill"]="React"
+        // console.log(obj)
+
+        // Math Functions : Pi , ceil , floor , random , abs , min , max
+
+    </script>
+</body>
+</html>

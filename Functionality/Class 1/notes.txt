@@ -1,0 +1,33 @@
+What is JS? Why we use JS?
+JS stands for Javascript which is scripting and programming language used to develop the server and also the UI.
+
+Types of JS
+--> Inline 
+--> Internal
+--> External
+
+What is variables,keywords & data type?
+Variables are the container that store the value at the memory.
+let , var , const : diffrence b/w let var & const
+Data Type means which type of value is stored in a variable.
+    Number : int & float
+    String
+    Boolean
+    Undefined
+    Null
+
+What is user-input, typecasting & template literal(feature of ES6)?
+prompt() helps us to take an user-input. It returns us an string value
+typecasting : parseInt() & parseFloat()
+Template Literal (Feature of ES6 version) : `String ${variable name/operation}`
+
+What is operators?
+Operation b/w mutiple operands is known as operator.
+A+B , here A & B is a operand & + is a operator
+
+Arthmetic : +,-,*,/(Quotient),%(Remainder),**(Power)
+Relational : <,>,<=,>=,!=,==,===(only in js)
+Logical : && || !
+Unary : Increment(++) & Decrement(--)
+Assignment : =,+=,-=,*=,/=,%=,**=
+Ternary : Based on the conditions

@@ -1,0 +1,64 @@
+Conditional Statement
+    When we have two or more condition to deal with.
+    i. if , else-if else
+        if is the starting statement & can be used multiple times.
+        else is the ending statement & can be used only single time.
+    ii. switch case
+        This means we have single expression and on that single expression we have multiple cases.
+
+        buttonPressed : this is my expression
+            press 1 for react
+            press 2 for node
+            press 3 for express
+            press 4 for mongodb
+
+Control Flow Statement : loops : It runs till the condition is true.
+    for(start;stop;step){code}
+    while
+        start;
+        while(stop){
+            code;
+            step;
+        }
+    do-while
+        start;
+        do{
+            code;
+            step;
+        }while(stop);
+
+    for-of : string , array & object
+
+Functions : A block of code that is used for a certain work.
+
+    i. Normal Function
+        function func_name(){ define & declare
+            code
+        }
+        func_name() calling of a function
+
+    ii. Parameter & Argument Function.
+
+        Parameter : These are the variables that are declared in scope of function.
+
+        Argument : These are the value that are passed in the parameters.
+
+    iii. returning function
+        This basically return the value to the function itself.
+
+    iv. default parameter function
+        Here we have some parameter in which we have some default value.
+
+    v. function expression
+        it converts variable to function
+
+    vi. Arrow Function
+
+Math Function
+    pi
+    abs
+    random : It generates a random number b/w 0 to 1.
+    floor : It round off to the lowest value.
+    ceil : It round off to the highest value.
+    max
+    min

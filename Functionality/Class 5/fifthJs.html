@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // Asynchronous & Synchronous Programming.
+        // Asynchronous Programming means their some wait time in the code.
+        // FOr Example : Api Calls , Promises , setTimeout(callback,delay) , setInterval
+
+        // setTimeout means that code will run after some delay.
+        // setTimeout(()=>{
+        //     console.log("Hello")
+        // },3000)
+
+        // setInterval means it will run on every interval.
+        // let id=setInterval(()=>{
+        //     console.log("Hello")
+        //     console.log("How are you?")
+        // },3000)
+
+        // Synchronous Programming means that it execute line by line.
+        // console.log("Hello")
+        // console.log("Hii")
+        // console.log("How are you?")
+
+        // Deep copy & Shallow copy
+        // let arr=[10,20,30,40,50,60,[70,80,90,100]]
+        // let copy=arr; // this copies the reference of the array elements.
+
+
+        // Shallow copy
+        // let copy=[...arr]; // This means that arr is copied without any previous references , only first levels are copied without any reference but nested levels are copied on the reference.
+        // copy[3]=140;
+        // copy[6][2]=190 // copy & orignal
+        // console.log(arr[6][2])
+
+        // Deep Copy : Here all the levels are copied without any previous references.
+
+        // JSON.stringify() : it converts the arr or object into string
+        // JSON.parse() : it converts string to JSON elements.
+        // let copy=JSON.parse(JSON.stringify(arr))
+
+        // copy[3]=140;
+        // copy[6][2]=190 // copy
+
+        // console.log("Copy :",copy)
+        // console.log("Original :",arr)
+
+        // Promises : It means that it woork in 2 direction , either it will succeed or it will get fail.
+
+        // Promise : fullfill or fail
+        // We use promises to elimnate the Callback hell.
+
+        // What is Callback hell?
+        // Callback hell means a callback inside another callback that inside another callback and so on....
+
+        // function dataSave(data, success, failure) {
+        //     let internetSpeed = Math.ceil(Math.random() * 10);
+
+        //     if (internetSpeed > 4) {
+        //         success(internetSpeed)
+        //     }
+        //     else {
+        //         failure(internetSpeed)
+        //     }
+        // }
+
+        // dataSave("Jatin", (s) => {
+        //     console.log("Data 1 Saved", s)
+        //     dataSave("Kashish", (s) => {
+        //         console.log("Data 2 Saved", s)
+        //         dataSave("Laxman", (s) => {
+        //             console.log("Data 3 Saved", s)
+        //         }, (f) => {
+        //             console.log("Less Internet Speed", f)
+        //         })
+        //     }, (f) => {
+        //         console.log("Less internet Speed", f)
+        //     })
+        // }, (f) => {
+        //     console.log("Less Internet Speed", f)
+        // })
+
+        // Promises
+        function dataSave(data) {
+            return new Promise((res, rej) => {
+                let internetSpeed = Math.ceil(Math.random() * 10);
+                if (internetSpeed > 4) {
+                    res(internetSpeed)
+                }
+                else {
+                    rej(internetSpeed)
+                }
+            })
+        }
+        // Promises are handled by then & catch method.
+        // Where then is for success & catch is for error.
+        dataSave("Jatin") // promise
+        .then((s)=>{
+            console.log("Data 1 Saved",s)
+            return dataSave("Kamal") // promise
+        })
+        .then((s)=>{
+            console.log("Data 2 Saved",s)
+        })
+        .catch((e)=>{ // this single catch can handle all the promises errors.
+            console.log("Less Internet Speed",e)
+        })
+    </script>
+</body>
+
+</html>

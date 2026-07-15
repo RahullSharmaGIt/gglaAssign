@@ -1,0 +1,24 @@
+Table tag
+    Table is a combination of row & column
+    where row= tr 
+    column = td/th
+
+    cellspacing : Space b/w outer cell & inner cell
+
+    cellpadding : Space b/w content & cell
+
+    they are applicable on td / th
+    row_merge : rowspan (vertical merge)
+    column_merge : colspan (horizontal merge)
+
+Form tag
+    label
+    input : text , radio , number , date ,.....
+    textarea : feedback
+    fieldset : border
+    legend : Heading
+    select --> option : Dropdowns
+
+
+Entities
+&lt;
